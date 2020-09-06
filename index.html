@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Иван Винокуров">
+  <meta name="description" content="Демка, список сотрудников">
+  <title>Employees list</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+  <div class="page">
+      <h1 class="page-title">Список сотрудников</h1>
+      <div class="empl-list">
+        <div class="empl-container">
+            <div class="empl-table">
+                <div class="table-header">
+                    <div class="table-name">Имя</div>
+                    <div class="table-name">Фамилия</div>
+                </div>
+                <div class="table-line">
+                    <img src="./images/man-icon.svg" alt="icon" class="table-icon">
+                    <p class="line-name">John</p>
+                    <p class="line-surname">Dow</p>
+                    <div class="line-icons">
+                        <img src="./images/pencil-icon.svg" alt="icon" class="edit-icon">
+                        <img src="./images/close.svg" alt="icon" class="delete-icon">
+                    </div>
+                </div>
+                <div class="table-line">
+                    <img src="./images/man-icon.svg" alt="icon" class="table-icon">
+                    <p class="line-name">Moby</p>
+                    <p class="line-surname">Dick</p>
+                    <div class="line-icons">
+                        <img src="./images/pencil-icon.svg" alt="icon" class="edit-icon">
+                        <img src="./images/close.svg" alt="icon" class="delete-icon">
+                    </div>
+                </div>
+                <div class="table-line">
+                    <img src="./images/man-icon.svg" alt="icon" class="table-icon">
+                    <p class="line-name">Sponge</p>
+                    <p class="line-surname">Bob</p>
+                    <div class="line-icons">
+                        <img src="./images/pencil-icon.svg" alt="icon" class="edit-icon">
+                        <img src="./images/close.svg" alt="icon" class="delete-icon">
+                    </div>
+                </div>
+            </div>
+            <button type class="button table-button">Добавить сотрудника</button>
+        </div>
+      </div>
+      <div class="popup popup__create">
+        <div class="popup__content">
+          <p class="popup-title">Создание сотрудника</p>
+          <a href="./index.html" class="popup-ref">Назад к списку</a>
+          <form class="popup__form popup__form_create" name="new">
+            <input type="text" placeholder="Введите имя сотрудника" minlength="2" id="name" name="name" class="popup__input popup__input_type_name">
+            <input type="text" placeholder="Введите фамилию сотрудника" minlength="2" id="surname" name="surname" class="popup__input popup__input_type_surname">
+            <button type class="button popup__button">Сохранить</button>
+          </form>
+        </div>  
+      </div>
+      <div class="popup popup__edit">
+        <div class="popup__content">
+          <p class="popup-title">Редактирование сотрудника</p>
+          <a href="./index.html" class="popup-ref">Назад к списку</a>
+          <form class="popup__form popup__form_edit" name="new">
+            <input type="text" placeholder="Введите имя сотрудника" minlength="2" id="name" name="name" class="popup__input popup__input_type_name">
+            <input type="text" placeholder="Введите фамилию сотрудника" minlength="2" id="surname" name="surname" class="popup__input popup__input_type_surname">
+            <button type class="button popup__button">Сохранить</button>
+          </form>
+        </div>  
+      </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
